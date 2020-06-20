@@ -145,6 +145,7 @@ class MainFrame (GraphScene):
 		self.play(Transform(r2,r2_a1))
 		
 		line2 = self.get_graph(lambda x : 80 - x, color = GREEN)
+		area = self.get_area(line1,line2,0)
 		self.play(ShowCreation(line2),run_time=2)
 		self.wait()
 
